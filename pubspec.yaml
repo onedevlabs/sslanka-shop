@@ -1,0 +1,60 @@
+name: sslanka_shop
+description: SSL Lanka Online Shop Mobile App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # WebView plugin
+  webview_flutter: ^4.4.2
+  webview_flutter_android: ^3.12.1
+  webview_flutter_wkwebview: ^3.9.4
+  
+  # For connectivity checks
+  connectivity_plus: ^5.0.2
+  
+  # For URL launching
+  url_launcher: ^6.2.2
+  
+  # For share functionality
+  share_plus: ^7.2.1
+  
+  # For permission handling
+  permission_handler: ^11.1.0
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  
+  # Add app icon and logo
+  assets:
+    - assets/images/
+    - assets/images/logo.png
+
+# Icon generation configuration
+# Place your 1024x1024 app icon at: assets/images/app_icon.png
+# Then run: flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+  
+  # Adaptive icon for Android (optional)
+  adaptive_icon_background: "#2196F3"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+  
+  # Remove alpha channel for iOS
+  remove_alpha_ios: true
